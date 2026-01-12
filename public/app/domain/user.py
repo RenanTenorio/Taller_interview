@@ -85,7 +85,6 @@ class User:
                 raise PaymentException('Amount must be a non-negative number.')
 
             if self.balance < amount:
-                print(f"Insufficient balance. Charging credit card... for {self.username}")
                 payment = self.pay_with_card(target, amount, note)
 
             payment = self.pay_with_balance(target, amount, note)
@@ -96,7 +95,6 @@ class User:
             raise PaymentException('Error on payment process. Do it again.')
 
     def pay_with_card(self, target, amount, note):
-        print(f"Charging credit card for {self.username}...")
         amount = float(amount)
 
         if self.credit_card_number is None:
