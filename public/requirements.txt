@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+litellm
+google-generativeai
+langsmith
+pyautogen
+python-dotenv
+pytest
+pytest-asyncio
+pydantic
+httpx
+sqlalchemy>=2.0
+asyncpg
+websockets
